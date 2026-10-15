@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos e id</title>
+
+    <!-- Pode usar a tag style no css para personalizar e usar o id -->
+    <!-- Quando for usa id usa-se o # antes do identificador -->
+    <!-- Se for classe usa o . antes do identificador -->
+    <!-- !important é usado para questões de especificidade por exemplo sobrepor um id (não é recomendado)-->
+    <style>
+        h1 {
+            background: blue;
+        }
+
+        #identificador-um {
+            background: aqua;
+        }
+
+        .um-paragrafo {
+            background: red;
+        }
+    </style>
+</head>
+
+<!-- Id é importante quando for usar css e java script-->
+
+<body>
+    <h1 id="identificador-um" class="classe-um">
+        id precisa de ter um valor e ser único
+    </h1>
+
+    <h1 id="identificador-dois" class="classes-dois">
+        Os elementos da classe pode se repetir e é possível ter um elemento com mais de uma classe
+    </h1>
+
+    <p class="um-paragrafo">paragrafo</p>
+</body>
+
+</html>
