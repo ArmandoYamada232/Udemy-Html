@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    background: black;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 140px;
+
+}
+.cabecalho a{
+    text-decoration: none;
+    color:red;
+    font-family: sans-serif;
+    font-size: 35px;
+}
+
+.button-entrar {
+    background: red;
+    color: white;
+}
+
+.button-idioma {
+    background-color:#5B5B58 ;
+    color: white;
+}
+
+.button-entrar, .button-idioma{
+    border-radius: 5px 5px;
+    padding: 8px 16px;
+}
