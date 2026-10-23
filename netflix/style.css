@@ -4,9 +4,19 @@
     box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Netflix Sans Mono";
+  src: url("https://occ.a.nflxso.net/genc/hawkins/5.31.2/font/netflix-sans-mono-variable-full.woff2")
+    format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 body{
     background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/5aa70728-e223-472f-9230-babd8f6ba166/web/BR-pt-20261019-TRIFECTA-perspective_62719f23-ba39-4994-be19-93faaf0e642d_large.jpg')
 }
+
 
 .cabecalho{
     background: black;
@@ -45,6 +55,9 @@ body{
     gap: 30px;
 }
 .texto-central-da-pagina{
+    font-family: "Netflix Sans";
+    color: #fff;
+    font-weight: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,4 +68,5 @@ body{
 .titulo{
     font-size: 50px;
     text-align: center;
+
 }
