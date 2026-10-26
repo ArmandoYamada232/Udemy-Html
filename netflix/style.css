@@ -16,6 +16,7 @@
 
 body{
     background-size: cover;
+    background-position: top center;
     background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/5aa70728-e223-472f-9230-babd8f6ba166/web/BR-pt-20261019-TRIFECTA-perspective_62719f23-ba39-4994-be19-93faaf0e642d_large.jpg')
 }
 
