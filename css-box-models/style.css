@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Entre o conteudo e a margem tem o padding-box */
+.section-one{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwrv6wL3j0nnG6xaohw79S9j1QQAeO67V5XBhlcaqUWA&s=10);
+    background-position: center center;
+    background-size: cover;
+    border: 5px solid black;
+    width: 200px;
+    height: 150px;
+    padding: 15px;
+    color: #fff;
+}
+
+/*Margin serve para empurrar conteudo para longe de outro conteudo*/
+
+.section-two{
+    background: cyan;
+    width: 100px;
+    height: 100px;
+}
