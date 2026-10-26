@@ -5,6 +5,31 @@
 }
 
 nav{
-    height: 50px;
-    background-color: black;
+    display: flex;
+    align-items: center;
+    background-color: red;
+}
+
+/*nav e o conteudo a*/
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding: 10px;
+    display: block;
+}
+/* Hover é para colocar sombra quando passa o mouse em cima dos itens a dentro a ul*/
+nav a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*nav e o conteudo lista não ordenada ul*/
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+
+    
 }
