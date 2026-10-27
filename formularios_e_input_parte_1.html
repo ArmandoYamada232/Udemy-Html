@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários e input</title>
+</head>
+
+<!--tag form é um block-->
+<!--Field set serve para agrupar os campos de um formulário-->
+<!--NÃO PODE ANINHAR DOIS FORMULÁRIOS OU MAIS-->
+<!--Form deve receber uma action ou seja para onde irá mandar o formulario: url, mesma página ou caminho de arquivo-->
+<!--Form deve receber um metodo que podem ser get ou post -->
+<!--Target blank é para abrir uma nova aba quando clicar-->
+
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off" class="formulario-de-primeiro-nome-e-ultimo-nome">
+        <section class="name">
+            <h1>login</h1>
+            <!--Label é o campo de texto e input recebe texto-->
+            <label for="fname">first-name:</label><br>
+            <input id="first-name" type="text"><br>
+            <label for="lname">last-name:</label><br>
+            <input id="last-name" type="text"><br>
+        </section>
+    </form>
+</body>
+
+</html>
