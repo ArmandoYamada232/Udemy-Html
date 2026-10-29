@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.meu-formulario{
+    display: block;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+label{
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+}
+
+label p {
+    font-family: Arial, Helvetica, sans-serif;
+}

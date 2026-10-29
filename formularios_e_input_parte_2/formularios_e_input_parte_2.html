@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>formularios_e_input_parte_2</title>
+</head>
+<!--Colocar o id para vincular o input com texto-->
+<!--Colocar name para referenciar no backend-->
+<!--Placeholder é um texto que fica dentro do campo-->
+<!--Value é o valor do input e chega junto com o nome enviado-->
+<!--Required é quando o campo tem que ser preenchido-->
+
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p class="meu-formulario">Meu Formulário</p>
+        <p>
+            <label for="nome">
+                Nome:
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+            </label>
+        </p>
+
+        <!--O que chega no servidor é o name com nome do campo e o value-->
+        <p>
+            <label for="dev">Sou um dev? </label>
+            <input type="checkbox" name="dev" id="dev" value="sim">
+        </p>
+
+        <p>
+            Genêro:
+            <label for="feminino">feminino</label>
+            <input type="radio" id="feminino">
+            <label for="masculino">masculino</label>
+            <input type="radio" id="masculinio">
+        </p>
+
+        <p>
+            <label for="data">data:</label>
+            <input type="date" id="data" name="data">
+        </p>
+
+        <p>
+            <label for="datetime">datetime:</label>
+            <input type="datetime-local" id="datetime" name="datetime">
+        </p>
+
+        <p>
+            <label for="hora">hora:</label>
+            <input type="time" name="hora" id="hora" value="00:00">
+        </p>
+
+        <p>
+            <label for="cor">cor preferida:</label>
+            <input type="color" name="cor" id="cor" value="#ffffff">
+        </p>
+
+        <p>
+            <label for="email">email:</label>
+            <input type="email" name="email" id="email" placeholder="email@dominio.com">
+        </p>
+
+        <p>
+            <label for="senha">insira sua senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="digite sua senha">
+        </p>
+
+        <!--Acep desempenha uma função de aceitar porém só irá aceitar com a extensão .png-->
+        <!--Multiple permite selecionar multiplos arquivos durante a escolha-->
+        <p>
+            <label for="foto">insira sua foto:</label>
+            <input type="file" name="foto" id="foto" accept=".png,.sgv" multiple>
+        </p>
+
+        <!--min permite que eu escolha o número minimo que o usuário pode digitar e o max é o máximo-->
+        <!--step é de quanto em quanto pode pular-->
+        <p>
+            <label for="numero">número:</label>
+            <input type="number" name="numero" id="numero" placeholder="digite um número" min="1" max="100" step="1">
+        </p>
+
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
+        </p>
+
+        <!--Esse range parece volume insere uma barra que pode ser mexida com mouse-->
+        <p>
+            <label for="volume">insira o range</label>
+            <input type="range" name="volume" id="volume">
+        </p>
+    </form>
+</body>
+
+</html>
