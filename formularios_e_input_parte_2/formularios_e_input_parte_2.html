@@ -81,15 +81,48 @@
             <input type="number" name="numero" id="numero" placeholder="digite um número" min="1" max="100" step="1">
         </p>
 
-        <p>
-            <button type="submit">Enviar</button>
-            <button type="reset">Resetar</button>
-        </p>
-
         <!--Esse range parece volume insere uma barra que pode ser mexida com mouse-->
         <p>
             <label for="volume">insira o range</label>
             <input type="range" name="volume" id="volume">
+        </p>
+
+        <p>
+            <label for="links">Url:</label>
+            <input type="url" name="links" id="links" placeholder="insira sua url aqui">
+        </p>
+
+        <p>
+            <label for="busca-semantico">Buscador semântico</label>
+            <input type="search" name="buscador-semantico" id="buscador-semantico">
+        </p>
+
+        <!--opt group serve para criar um grupo dentro da seleção-->
+        <p>
+            <label for="selecionar">Selecionar</label>
+            <select name="selecionar" id="selecionar">
+                <optgroup label="grupo 1">
+                    <option value="valor 1" label="label 1"></option>
+                    <option value="valor 2" label="label 2"></option>
+                    <option value="valor 3" label="label 3"></option>
+                </optgroup>
+                <optgroup label="grupo 2">
+                    <option value="valor 1" label="label 1"></option>
+                    <option value="valor 2" label="label 2"></option>
+                    <option value="valor 3" label="label 3"></option>
+                </optgroup>
+            </select>
+        </p>
+
+        <!--Textarea é muito similar ao input de texto porém pode ter vparias linhas-->
+        <p>
+            <label for="texto area">textarea:</label>
+            <textarea name="texto area" id="texto area"></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
         </p>
     </form>
 </body>
