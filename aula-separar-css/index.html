@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Separar html com css</title>
+</head>
+
+<!--Sempre que for usar css optar por utilizar classes-->
+<!--Se não conseguir acessar normal pelo caminho utilizar ./assets/css/style.css-->
+<!--A ordem do css altera a ordem quem é aplicado é ultima regra que o navegador viu-->
+
+<body><!--pai da div-->
+    <div class="caixa"><!--pai da seção-->
+        <section> <!--pai do h1 e p-->
+            <!--H1 e p são irmãos-->
+            <h1>
+                Lorem ipsum dolor sit.
+            </h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, sed!</p>
+            <p>outro p porém tá selecionado por completo pq não fui especifico em selecionar</p>
+        </section>
+    </div>
+</body>
+
+</html>

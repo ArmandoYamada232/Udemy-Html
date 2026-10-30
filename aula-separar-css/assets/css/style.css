@@ -1,0 +1,31 @@
+/*Para mostrar a caixa deve-se colocar uma cor e também uma altura e largura*/
+/*com esse seletor geral é normal zerar o css*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.caixa{
+    background-color: red;
+    height: 200px;
+    width: 250px;
+}
+
+/*Seletor por tag seleciona todas as tags*/
+/*seletor não especifico*/
+
+/*p{
+    color: #ffffff
+}*/
+
+/*Seletor especifico*/
+/*E seletor que tem duas regras selecionando tags diferentes*/
+
+body div section h1,
+body div section p{
+    color: chocolate;
+}
+
+
