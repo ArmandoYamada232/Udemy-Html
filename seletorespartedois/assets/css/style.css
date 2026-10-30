@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Um elemento após*/
+/*Adjacente simbling selector para um elemento com a classe pai encontre o P que vier depois de H1*/
+.pai H1 + p{
+    color: red;
+}
+
+.pai p + H1{
+    color: red;
+}
+
+/*todos os elemento após*/
+/*general simbling selector para um elemento com a classe pai encontre o P que vier depois de H1*/
+.pai H1~p{
+    color: red;
+}
+
+/*Selecionar com meu atributo dentro de uma tag*/
+/*A tag que tiver um atributo com meu atributo recebe a estilização usando o
+atributo entre colchetes e abrindo chaves e colocando o css dentro*/
+
+/*Recebe um valor com base no js mas no html tem que tá o valor também*/
+[meu-atributo = "valor"]{
+    color: red;
+}
