@@ -1,0 +1,10 @@
+/*Usar a negação para que todos os paragrafos menos o com a classe meiota seja azul*/
+
+p:not(.meiota){
+    color: blue;
+}
+
+/*Quando o input não estiver marcado o próximo p será da cor marrom*/
+input:not(:checked) + p{
+    color: brown;
+}
