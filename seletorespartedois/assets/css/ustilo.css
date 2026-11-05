@@ -1,0 +1,29 @@
+/*Só funciona com irmãos*/
+
+/*O indice começa na posição 1 e pode usar a pseudo classe para selecionar com base no indice*/
+/*Selecionei o item com base no indice 2*/
+ul li:nth-child(2){
+    color: blue;
+}
+
+/*Selecionar somente os pares*/
+ul li:nth-child(even){
+    color: blue;
+}
+
+/*Selecionar somente os impares*/
+ul li:nth-child(odd){
+    color: red;
+}
+
+/*Selecionar de 5 em 5 com 5n*/
+ul li:nth-child(5n){
+    text-decoration: underline;
+    
+}
+
+/*começa do numero 10 e termina pulando 2 depois*/
+ul li:nth-child(10n +2){
+    background-color: chocolate;
+    
+}
