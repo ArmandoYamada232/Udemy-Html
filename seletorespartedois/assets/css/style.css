@@ -28,3 +28,64 @@ atributo entre colchetes e abrindo chaves e colocando o css dentro*/
 [meu-atributo = "valor"]{
     color: red;
 }
+
+/*Quando tiver a pseudo classe posso usar o transition para definir como irá agir*/
+.heading{
+    transition: all 1s ease-in-out;
+}
+
+/*Pseudo classe vem apos a classe*/
+.heading:hover{
+    background-color: red;
+}
+
+
+/*Configurar um link*/
+
+.menu{
+    text-decoration: none;
+    color: black;
+    transition: all 1s ease-in-out;
+}
+
+/*Essa pseudo classe é para link que eu nunca visitei*/
+.menu:link{
+    color: blueviolet;
+}
+/*Essa pseudo classe é para link que eu já visitei*/
+.menu:visited{
+    color: dimgray;
+}
+.menu:hover{
+    background-color: aqua;
+}
+/*Essa pseudo classe é quando o link tá clicado ou seja ativo quando clica ele muda de cor*/
+.menu:active{
+    background-color: blue;
+}
+
+/*vários elementos tem essa propriedade o mais usado é em inputs e botões que é
+o modo foco*/
+.input:focus{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+    outline: none;
+    border: 1px solid black;
+}
+/*Quando o input está desativado ele fica nesse estado porém
+ tem que colocar disabled no html do input*/
+ /*cursor: not-allowed; é para ficar aquele sinal de impossivel clicar*/
+.input:disabled{
+    background-color: brown;
+    cursor: not-allowed;
+}
+
+.checkbox:checked{
+    width: 150px;
+    height: 180px;
+}
+
+/*Utilização de lógica*/
+
+.checkbox:checked + .paragrafo{
+    background-color: aqua;
+}
