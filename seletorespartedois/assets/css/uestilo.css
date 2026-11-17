@@ -1,0 +1,74 @@
+/*Só funciona com irmãos*/
+
+/*O indice começa na posição 1 e pode usar a pseudo classe para selecionar com base no indice*/
+/*Selecionei o item com base no indice 2*/
+ul li:nth-child(2){
+    color: blue;
+}
+
+/*Selecionar somente os pares*/
+ul li:nth-child(even){
+    color: blue;
+}
+
+/*Selecionar somente os impares*/
+ul li:nth-child(odd){
+    color: red;
+}
+
+/*Selecionar de 5 em 5 com 5n*/
+ul li:nth-child(5n){
+    text-decoration: underline;
+    
+}
+
+/*começa do numero 10 e termina pulando 2 depois*/
+ul li:nth-child(10n +2){
+    background-color: chocolate;
+    
+}
+
+/*Pseudo elementos que adiciona uma coisa depois porém não fica na página
+É um elemento qualquer e pode ser estilizado com o css
+
+usa-se after pra depois e before antes e pode usar com :: ou só com :
+
+AFTER - dentro do li e depois do conteudo
+BEFORE - dentro do li e antes do conteudo
+*/
+body ul li::after{
+    content: ' - ';
+    background-color: red;
+    display: block;
+}
+
+body ul li::before{
+    content: ' - ';
+    background-color: red;
+    display: block;
+}
+
+/*First letter faz a primeira letra ser diferente*/
+/*First line faz a primeira linha ser diferente*/
+body h1::first-letter{
+    color: green;
+    font-size: 50px;
+}
+
+body p::first-line{
+    color: green;
+    font-size: large;
+    font-weight: bold;
+}
+
+/*Tem o selection ou seja o que estiver selecionado com mouse terá o estilo */
+
+body p::selection{
+    background-color: black;
+    color: white;
+}
+
+/*Pseudo elemento que mexe no placeholder manipula o formulário*/
+body input::placeholder{
+    color: chocolate;
+}
